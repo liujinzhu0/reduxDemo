@@ -1,13 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  reactDemo
-  xinjiande 
+
+
+  <script>
+    var arr = [
+      { id: 1, status: 0, text: "第一条任务" },
+      { id: 2, status: 1, text: "第二条任务" },
+      { id: 3, status: 2, text: "第三条任务" }]
+
+function b(a,b){
+  return  a.status > b.status ? 1 : -1;
+}
+
+arr.sort(b)
+console.log(arr.sort(b))
+    var array = [
+    {name: 'a', phone: 1},
+    {name: 'b', phone: 5},
+    {name: 'd', phone: 3},
+    {name: 'c', phone: 4}
+ ]
+// array.sort(getSortFun('desc', 'phone'));
+// function getSortFun(order, sortBy) {
+//     var ordAlpah = (order == 'asc') ? '>' : '<';
+//     var sortFun = new Function('a', 'b', 'return a.' + sortBy + ordAlpah + 'b.' + sortBy + '?1:-1');
+//     return sortFun;
+// }
+
+// console.log(arr.sort(getSortFun('asc', 'status')))
+
+//alert(JSON.stringify(array));
+  </script>
+
 </body>
+
 </html>
